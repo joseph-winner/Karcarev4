@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Karcare - One stop platform for the automotive industry</title>
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <!-- Load the Google Maps JavaScript API -->
+    <script loading=async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs3nHRK_HuWB2anTYog_6vRiAWyx5HbTg&libraries=places&callback=init"></script>
+
+</head>
+<body>
+
+     <!-- NAVIGATION BAR START -->
+     <div class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-items">
+                <div class="logo">
+                    <h1 class="gradient-text">Karcare</h1>
+                </div>
+
+                <div class="nav-left nav-list">
+                    <ul>
+                        <li>
+                            <a href="">Car Service</a>
+                        </li>
+                        <li>
+                            <a href="">Car Wash</a>
+                        </li>
+                        <li>
+                            <a href="">Business</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-right nav-list">
+                    <ul>
+                        <li class="bg-screen">
+                            <a href=""> <i class="fa fa-language"></i> EN</a>
+                        </li>
+                        <li class="bg-screen">
+                            <a href="">Help</a>
+                        </li>
+                        <li>
+                            <a href="">Login</a>
+                        </li>
+                        <li class="sign-up">
+                            <a href="">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="humberger">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAVIGATION BAR ENDS -->
+    <!-- HERO SECTION STARTS HERE -->
+    <div class="hero-section">
+        <div class="hero-section-rows">
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <div class="hero-section-desc">
+                <p class="loc-marker">
+                    <i class="fa fa-map-marker"> Current Location</i>
+                </p>
+                <p id="location-name"></p>
+                <input type="text" id="location-input" placeholder="Set your location">
+                <div class="desc-services-sect">
+                    <p class="desc-service-header">
+                        Select a Service
+                    </p>
+                    <div class="desc-service-rows">
+                        <div class="desc-service-row">
+                            <img src="./public/img/tyre.webp" alt="">
+                            <p class="service-desc">
+                                Tyre change
+                            </p>
+                        </div>
+
+                        <div class="desc-service-row">
+                            <img src="./public/img/tyre-alignment.webp" alt="">
+                            <p class="service-desc">
+                                Tyre balancing
+                            </p>
+                        </div>
+
+                        <div class="desc-service-row">
+                            <img src="./public/img/car-battery.webp" alt="">
+                            <p class="service-desc">
+                                Car battery services
+                            </p>
+                        </div>
+
+                        <div class="desc-service-row">
+                            <img src="./public/img/car-recovery.webp" alt="">
+                            <p class="service-desc">
+                                Breakdown recovery
+                            </p>
+                        </div>
+
+                        <div class="desc-service-row">
+                            <img src="./public/img/Car-AC-repair.webp" alt="">
+                            <p class="service-desc">
+                                Car AC Repair
+                            </p>
+                        </div>
+
+                        <div class="desc-service-row">
+                            <img src="./public/img/Car-Engine-Repair.webp" alt="">
+                            <p class="service-desc">
+                                Car Engine Repair
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desc-pay-method">
+                    <div class="pay-method">
+                        <p class="select-pay-method">
+                            Select Payment Method
+                        </p>
+                        <select name="paymeent" id="pay-method">
+                            <option value="Cash">Cash</option>
+                            <option value="Card">Card</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HERO SECTION ENDS HERE -->
+    <script src="./public/js/index.js"></script>
+</body>
+</html>
